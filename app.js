@@ -1,10 +1,17 @@
-const http = require("http");
+const express = require("express");
+const path = require("path");
 
-http
-  .createServer(function (req, res) {
-    res.write("Hello World!");
-    res.end();
-  })
-  .listen(3000, function () {
-    console.log("server start at port 3000");
-  });
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Serve static files from the React app build directory
+app.use(express.static(path.join(__dirname, "build")));
+
+// Handle any requests that don't match the ones above
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

@@ -1,11 +1,50 @@
 {
   "name": "git-workshop",
   "version": "1.0.0",
-  "description": "Sample workshop project",
-  "main": "app.js",
+  "description": "Americold UseCases Dashboard Implementation",
+  "main": "src/index.tsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "node app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhtrajnishsingh/git-workshop.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/lhtrajnishsingh/git-workshop/issues"
+  },
+  "homepage": "https://github.com/lhtrajnishsingh/git-workshop#readme",
+  "dependencies": {
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@types/styled-components": "^5.1.34",
+    "express": "^4.21.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.8",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

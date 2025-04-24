@@ -1,0 +1,56 @@
+export const theme = {
+  colors: {
+    primary: "#0056B3",
+    secondary: "#6C757D",
+    success: "#28A745",
+    danger: "#DC3545",
+    warning: "#FFC107",
+    info: "#17A2B8",
+    light: "#F8F9FA",
+    dark: "#343A40",
+    background: "#F5F7FA",
+    text: "#212529",
+    border: "#DEE2E6",
+    headerBg: "#FFFFFF",
+    cardBg: "#FFFFFF",
+    accordionBg: "#F8F9FA",
+  },
+  fontSizes: {
+    xs: "0.75rem",
+    sm: "0.875rem",
+    md: "1rem",
+    lg: "1.125rem",
+    xl: "1.25rem",
+    xxl: "1.5rem",
+    xxxl: "2rem",
+  },
+  spacing: {
+    xs: "0.25rem",
+    sm: "0.5rem",
+    md: "1rem",
+    lg: "1.5rem",
+    xl: "2rem",
+    xxl: "3rem",
+  },
+  borderRadius: {
+    sm: "0.25rem",
+    md: "0.5rem",
+    lg: "1rem",
+    pill: "50rem",
+  },
+  shadows: {
+    sm: "0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)",
+    md: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
+    lg: "0 1rem 3rem rgba(0, 0, 0, 0.175)",
+  },
+  breakpoints: {
+    xs: "0",
+    sm: "576px",
+    md: "768px",
+    lg: "992px",
+    xl: "1200px",
+    xxl: "1400px",
+  },
+};
+
+export type Theme = typeof theme;

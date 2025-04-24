@@ -1,3 +1,3 @@
 [submodule "submodule-workshop"]
 	path = submodule-workshop
-	url = git@github.com:lhtrajnishsingh/submodule-workshop.git
+	url = https://github.com/lhtrajnishsingh/submodule-workshop.git
